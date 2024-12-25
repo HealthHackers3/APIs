@@ -5,7 +5,7 @@
 
 ```
 Multimedia-APIs:
-  GET /api/v1/img/full-res/{img-UUID}:
+  GET /api/v1/img/fullres/{img-UUID}:
     description: Download full resolution image (single image only).
     authentication: cookie credential
     parameters:
