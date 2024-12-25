@@ -52,7 +52,7 @@ Authentication-APIs:
     body:
       required: true
       properties:
-        username:
+        email:
           type: string
         password:
           type: string
@@ -62,11 +62,9 @@ Authentication-APIs:
     body:
       required: true
       properties:
-        username:
+        email:
           type: string
         password:
-          type: string
-        email:
           type: string
 
 User-APIs:
