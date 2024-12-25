@@ -47,7 +47,7 @@ Multimedia-APIs:
       required: true
 
 Authentication-APIs:
-  POST /api/v1/login:
+  POST /api/v1/auth/login:
     description: Post login info (username + password) to obtain cookie credential + user-UUID.
     body:
       required: true
@@ -57,7 +57,7 @@ Authentication-APIs:
         password:
           type: string
 
-  POST /api/v1/register:
+  POST /api/v1/auth/register:
     description: Register a new user.
     body:
       required: true
