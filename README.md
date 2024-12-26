@@ -32,16 +32,16 @@ Multimedia-APIs:
         required: true
         description: Unique identifier for the image.
 
-  POST /api/v1/img/upload/{user-UUID}:
-    description: Upload multiple images and their properties.
-    authentication: cookie credential + user-UUID
+  POST /api/img/upload/{post-UUID}: [COMPLETED]
+    description: Upload multiple images and their properties to a post object.
+    authentication: cookie credential + post-UUID
     headers:
-      Content-Type: multipart/form-data
+      Content-Type: multipart/form-data array
     parameters:
-      - name: user-UUID
+      - name: post-UUID
         in: path
         required: true
-        description: User identifier.
+        description: Identifier for the post.
     body:
       description: Images and associated metadata.
       required: true
