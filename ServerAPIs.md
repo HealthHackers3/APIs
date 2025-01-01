@@ -4,9 +4,9 @@
 #### Properties: Used within the request or response body to structure data payloads.
 
 ```
-Multimedia-APIs:
-  GET /api/v1/img/fullres/{img-UUID}:
-    description: Download full resolution image (single image only).
+Multimedia-APIs: [COMPLETED]
+  GET /api/v1/img/fullres/{img-UUID}: [COMPLETED]
+    description: Provides a endpoint for img access.
     authentication: cookie credential
     parameters:
       - name: img-UUID
@@ -14,8 +14,8 @@ Multimedia-APIs:
         required: true
         description: Unique identifier for the image.
 
-  GET /api/v1/img/thumbnail/{img-UUID}:
-    description: Download thumbnail (low resolution) image (single image only).
+  GET /api/v1/img/thumbnail/{img-UUID}: [COMPLETED]
+    description: Provides a endpoint for img access.
     authentication: cookie credential
     parameters:
       - name: img-UUID
@@ -23,8 +23,8 @@ Multimedia-APIs:
         required: true
         description: Unique identifier for the image.
 
-  GET /api/v1/img/properties/{img-UUID}:
-    description: Download properties associated with the image (author, cell type, etc.).
+  GET /api/img/properties/{img-UUID}: [COMPLETED
+    description: Returns a JSON object with the image cell properties.
     authentication: cookie credential
     parameters:
       - name: img-UUID
