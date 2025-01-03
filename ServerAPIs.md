@@ -23,7 +23,7 @@ Multimedia-APIs: [COMPLETED]
         required: true
         description: Unique identifier for the image.
 
-  GET /api/img/properties/{img-UUID}: [COMPLETED
+  GET /api/img/properties/{img-UUID}: [COMPLETED]
     description: Returns a JSON object with the image cell properties.
     authentication: cookie credential
     parameters:
@@ -47,21 +47,23 @@ Multimedia-APIs: [COMPLETED]
       required: true
 
 Authentication-APIs:
-  POST /api/v1/auth/login:
+  POST /api/v1/auth/login: [COMPLETED (the processing of actually checking authentication is still in progress)]
     description: Post login info (username + password) to obtain cookie credential + user-UUID.
     body:
       required: true
       properties:
-        email:
+        username:
           type: string
         password:
           type: string
 
-  POST /api/v1/auth/register:
+  POST /api/v1/auth/register: [COMPLETED]
     description: Register a new user.
     body:
       required: true
       properties:
+        username:
+          type: string
         email:
           type: string
         password:
