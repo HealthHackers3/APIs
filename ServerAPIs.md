@@ -70,23 +70,31 @@ Authentication-APIs:
           type: string
 
 User-APIs:
-  GET /api/v1/profile/{user-UUID}:
-    description: Download user profile.
+  GET /api/v1/profile/{user-UUID}/{field}: [COMPLETED]
+    description: Download user profile field.
     authentication: cookie credential
     parameters:
       - name: user-UUID
         in: path
         required: true
+      - name: field
+        in: path
+        required: true
+        description: the bit of the profile you want. Can be username, date, or email.
 
-  POST /api/v1/profile/{user-UUID}:
+  POST /api/v1/profile/{user-UUID}/{field}: [COMPELTED]
     description: Update user profile.
     authentication: cookie credential
     parameters:
       - name: user-UUID
         in: path
         required: true
+      - name: field
+        in: path
+        required: true
+        description: the bit of the profile you want. Can be username, date, or email.
     body:
-      description: Profile fields to update.
+      description: info for the updated profile
       required: true
 
 Search-APIs:
