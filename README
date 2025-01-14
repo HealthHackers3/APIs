@@ -115,6 +115,12 @@ Post APIS:
       response:
           success: JSON array of image modalities
           error: {error: <error>}
+  GET /api/post/getcategories
+      description: returns a list of categories and their ids
+      authentication: cookie credential
+      response:
+          success: JSON array of cell types
+          error: {error: <error>}
   POST /api/post/newpost/{user_id}
       description: adds a new post attributed to a user
       authentication: cookie credential
@@ -163,6 +169,12 @@ User APIS:
       authentication: cookie credential
       response:
           success: {created_at: <date>}
+          error: {error: <error>}
+    GET /api/user/favourites/{user_id}
+      description: returns the post_ids a user has favourited
+      authentication: cookie credential
+      response:
+          success: JSON array of post_ids
           error: {error: <error>}
     POST /api/email/{user_id}
       description: updates a user's email
