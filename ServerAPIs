@@ -1,4 +1,4 @@
-# APIs
+#### APIs
 
 #### Parameters: Used in the URL, headers, or cookies to pass data to the API.
 #### Properties: Used within the request or response body to structure data payloads.
